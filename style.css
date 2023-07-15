@@ -1,0 +1,153 @@
+/* 
+    Pizaan Maheriyar Tadiwala
+    tadiwala@sheridancollege.ca
+    14/07/2023
+    Description: This is the style sheet for the index.html file
+*/
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#controls {
+    width: 100%;
+    margin-top: -2vh;
+}
+
+#fieldLine1 {
+    border-color: red;
+}
+
+#fieldLine1>legend {
+    color: red;
+}
+
+
+#fieldLine2 {
+    border-color: blue;
+}
+
+#fieldLine2>legend {
+    color: blue;
+}
+
+
+/* Landscape Mode */
+@media only screen and (min-aspect-ratio: 1/1) {
+
+    .flexblock {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #canvasView {
+        max-height: 90vh;
+        max-width: 75vw;
+        border: 1px solid black;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* vertical align */
+        margin-bottom: 5px;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .col3 {
+        padding: 10px;
+    }
+
+    #controlblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+        max-width: 400px;
+        margin-right: 2.5vw;
+    }
+
+
+    #canvas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+        max-width: 100vw;
+    }
+
+
+    #resetBtn {
+        width: 99%;
+        height: 2.5vh;
+        margin-left: 0.08vw;
+        margin-top: 1.5vh;
+    }
+}
+
+/* Portrait Mode */
+@media only screen and (max-aspect-ratio: 1/1) {
+
+    .flexblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10vh;
+        max-height: 95vh;
+    }
+
+    #canvasView {
+        max-height: 38.5vh;
+        width: 75vw;
+        border: 1px solid black;
+    }
+
+
+    #controlblock {
+        padding-top: 12vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 13vh;
+        width: 95vw;
+    }
+
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    #canvas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+
+    #resetBtn {
+        width: 99%;
+        height: 2.5vh;
+        margin-top: 1vh;
+        margin-left: 0.5vw;
+    }
+
+}

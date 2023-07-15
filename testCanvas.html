@@ -1,0 +1,156 @@
+<!-- 
+    Pizaan Maheriyar Tadiwala
+    tadiwala@sheridancollege.ca
+    14/07/2023
+    Description: This is a page which displays the canvas
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Canvas</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="flexblock">
+
+        <div id="canvas">
+            <div>
+                <canvas id="canvasView"> </canvas>
+            </div>
+        </div>
+
+
+        <!-- CONTROLBLOCK ========================================================= -->
+        <div id="controlblock">
+
+            <div>
+                <h3>Line-Line Intersection</h3>
+            </div>
+
+            <div id="controls">
+
+                <!-- Line 1 -->
+                <fieldset id="fieldLine1">
+                    <legend>Line 1</legend>
+                    <div class="line">
+                        <!-- P1 -->
+                        <div>
+                            <!-- X -->
+                            <div class="row">
+                                <div>
+                                    <legend>P1</legend>
+                                </div>
+                                <div><span class="col1">x:</span><input type="range" class="col2" id="rangeX1" min="-10"
+                                        max="10" step="0.1" value="-8"><label id="labelX1" class="col3">-8</label></div>
+                            </div>
+                            <!-- Y -->
+                            <div class="row">
+                                <div><span class="col1">y:</span><input type="range" class="col2" id="rangeY1" min="-10"
+                                        max="10" step="0.1" value="-4"><label id="labelY1" class="col3">-4</label></div>
+                            </div>
+                        </div>
+
+
+                        <!-- P2 -->
+                        <div>
+                            <!-- X -->
+                            <div class="row">
+                                <div>
+                                    <legend>P2</legend>
+                                </div>
+                                <div><span class="col1">x:</span><input type="range" class="col2" id="rangeX2" min="-10"
+                                        max="10" step="0.1" value="7"><label id="labelX2" class="col3">7</label></div>
+                            </div>
+                            <!-- Y -->
+                            <div class="row">
+                                <div><span class="col1">y:</span><input type="range" class="col2" id="rangeY2" min="-10"
+                                        max="10" step="0.1" value="6"><label id="labelY2" class="col3">6</label></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p id="line1Eqn">Parametric Form: (-8, -4) + t(15, 10)</p>
+                    </div>
+                </fieldset>
+
+
+                <!-- Line 2  -->
+                <fieldset id="fieldLine2">
+                    <legend>Line 2</legend>
+                    <div class="line">
+                        <!-- P3 -->
+                        <div>
+                            <!-- X -->
+                            <div class="row">
+                                <div>
+                                    <legend>Q1</legend>
+                                </div>
+                                <div><span class="col1">x:</span><input type="range" class="col2" id="rangeX3" min="-10"
+                                        max="10" step="0.1" value="-2"><label id="labelX3" class="col3">-2</label></div>
+                            </div>
+                            <!-- Y -->
+                            <div class="row">
+                                <div><span class="col1">y:</span><input type="range" class="col2" id="rangeY3" min="-10"
+                                        max="10" step="0.1" value="8"><label id="labelY3" class="col3">8</label></div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- P4 -->
+                        <div>
+                            <!-- X -->
+                            <div class="row">
+                                <div>
+                                    <legend>Q2</legend>
+                                </div>
+                                <div><span class="col2">x:</span><input type="range" class="col2" id="rangeX4" min="-10"
+                                        max="10" step="0.1" value="6"><label id="labelX4" class="col3">6</label></div>
+                            </div>
+                            <!-- Y -->
+                            <div class="row">
+                                <div><span class="col2">y:</span><input type="range" class="col2" id="rangeY4" min="-10"
+                                        max="10" step="0.1" value="-8"><label id="labelY4" class="col3">-8</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="line2Eqn">Parametric Form: (-2, 8) + t(8, -16)</p>
+                    </div>
+                </fieldset>
+
+
+                <!-- Intersection Point-->
+                <fieldset>
+                    <legend>Intersection Point</legend>
+                    <p id="intersection">(0,0)</p>
+                </fieldset>
+
+                <button type="reset" id="resetBtn">RESET POINTS</button>
+            </div>
+
+        </div>
+        <!-- END OF CONTROLBLOCK ================================================== -->
+
+
+
+    </div>
+    <!-- END OF FLEXBLOCK -->
+
+    <!-- JS -->
+    <script src="https://www.songho.ca/js/Logger.js"></script>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
