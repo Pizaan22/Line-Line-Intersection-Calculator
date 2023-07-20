@@ -28,9 +28,9 @@ The Line-Line Intersection Calculator is designed to be responsive, meaning it a
 
 The calculator is built using the following technologies:
 
-HTML: The structure and layout of the web page.
-CSS: Styling and design elements to enhance the visual appearance.
-JavaScript: The core logic for calculating the intersection point.
+- HTML: The structure and layout of the web page.
+- CSS: Styling and design elements to enhance the visual appearance.
+- JavaScript: The core logic for calculating the intersection point.
 
 **Running the Calculator**
 
